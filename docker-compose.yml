@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    command: '--without-connection-token'
+    hostname: 'localhost'
+    image: 'gitpod/openvscode-server:1.69.2'
+    networks:
+      vscode:
+    ports:
+      - '3000:3000'
+    restart: 'no'
+    volumes:
+      - './test.excalidraw:/home/workspace/test.excalidraw:ro'
+
+networks:
+  vscode:
