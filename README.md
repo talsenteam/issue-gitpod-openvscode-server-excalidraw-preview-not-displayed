@@ -5,7 +5,7 @@ When using the gitpod/openvscode-server docker image and installing the Excalidr
 ## How to reproduce the issue
 
 1. Run `docker compose up --detach`
-2. Visit `http://localhost:3000/?folder=/home/workspace` in your browser
+2. Visit `http://localhost:3000/?folder=/home/workspace` in your browser (preferrably Chromium without Extensions)
 3. Navigate to the extensions store and install the Excalidraw plugin `pomdtr.excalidraw-editor`
 4. Open the readonly file `test.excalidraw` in the editor
 
@@ -67,10 +67,11 @@ The excalidraw preview / editor should be usable when working on `http://localho
 
 ## Used Versions
 - gitpod/openvscode-server docker image [v1.69.2](https://hub.docker.com/r/gitpod/openvscode-server) and installing 
-- Chromium 103.0.5060.134 (snap)
-  - with no relevant extensions enabled, that may block content
-  - with no additional security settings being configured (e.g. Third-Party Cookie Blocking, etc)
-  - running on Ubuntu 22.04 with KDE installed ( `sudo apt install kde-full` )
+- Chromium with no relevant extensions enabled, that may block content & with no additional security settings being configured (e.g. Third-Party Cookie Blocking, etc)
+  - `103.0.5060.134 (snap)` running on `5.15.0-41-generic` Ubuntu 22.04 with KDE installed ( `sudo apt install kde-full` )
+  - `103.0.5060.134 (Official Build) Arch Linux (64-bit)` running on `5.18.12-3-MANJARO`
+- Google Chrome no relevant extensions enabled, that may block content & with no additional security settings being configured (e.g. Third-Party Cookie Blocking, etc)
+  - `103.0.5060.134` running on `Darwin Kernel Version 21.5.0`
 - Excalidraw version 3.2.0 installed via extensions store
 
 ## Additional Screenshots
