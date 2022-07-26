@@ -1,6 +1,6 @@
 # Issue: gitpod/openvscode-server excalidraw preview not displayed
 
-When using the gitpod/openvscode-server docker image installing the Excalidraw extension in Chromium, the preview will not be displayed, when it a *.excalidraw file is opened inside the editor.
+When using the gitpod/openvscode-server docker image and installing the Excalidraw extension in Chromium, the preview will not be displayed, when a *.excalidraw file is opened inside the editor.
 
 ## How to reproduce the issue
 
